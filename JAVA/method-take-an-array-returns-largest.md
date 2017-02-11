@@ -2,7 +2,8 @@
 
 Write a method that takes an array of integers and returns the largest integer.
 
-  public class largest{
+  public class largest
+  {
   
     public static void main(String[] args)
     {
