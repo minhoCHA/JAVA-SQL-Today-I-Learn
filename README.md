@@ -1,3 +1,3 @@
 # Today I Learned
-....
-## commit things what I've learned today
+
+Commit things what I've learned today
