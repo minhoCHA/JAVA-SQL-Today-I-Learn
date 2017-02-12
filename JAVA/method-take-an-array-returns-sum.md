@@ -15,7 +15,6 @@ Write a method that takes an array of integers and returns the sum of all the in
 		
 			int sum = 0;
 			for(int i : array) {
-			
 				sum += i;
 			}
 			return sum;
