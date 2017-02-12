@@ -44,5 +44,4 @@ Cat 25: No Hat
 		  	    System.out.println("No hat");
 	          }
 	     } 
-	
 	  }
