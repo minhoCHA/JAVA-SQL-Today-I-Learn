@@ -99,4 +99,5 @@ the ```sleep``` method of the ```HouseDog``` class will have a higher priority t
 
 and the ```sleep``` method of the ```HouseDog``` class will be called.
 
-The method of re-implementing the methods of the parent class in the same form as the child class is called method overriding. (Overwrite method ※)
+>The method of re-implementing the methods of the parent class in the same form as the child class is called method overriding. 
+>(※Overwrite method)
