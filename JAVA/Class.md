@@ -39,5 +39,22 @@ so like this, I've made an object of University; student is an instance of class
 
 
 
-This picture can explain what the class is.
-![Alt text](/download/icecreamtool.jpg)
+It's easy to think like this.
+
+* Ice cream tool ==> class
+
+* Ice cream made with the tool ==> object
+
+
+
+So I can easily make lots of objects with University class.
+
+```java
+University cs = new University();
+University physics = new University();
+University history = new University();
+...
+```
+
+## Instance Variable
+
