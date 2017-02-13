@@ -24,7 +24,9 @@ so like this, I've made an object of University; student is an instance of class
 
 
 
-```**An object and an instance**
+
+```
+**An object and an instance**
 
 Another name of an object which is made by a class is an instance. Then what is the difference between those?
 
