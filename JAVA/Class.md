@@ -13,6 +13,7 @@ It's a basic form of the class. I've just declared the class and there's no cont
 
 But it also has a important function; **can make an object**
 
+
 This is how to make an object.
 ```java
 University student = new University();
@@ -21,7 +22,13 @@ University student = new University();
 
 so like this, I've made an object of University; student is an instance of class named University.
 
-> ```**An object and an instance**
 
-> Another name of an object which is made by a class is an instance. Then what is the difference between those?
-> 
+
+```**An object and an instance**
+
+Another name of an object which is made by a class is an instance. Then what is the difference between those?
+
+```University student = new University()``` in this case, student is an object. And also, it's an instance of University.
+
+So, we use an instance to explain a specific object(student)
+```
