@@ -178,14 +178,16 @@ We can only use this ```method``` like this
 Test myTest = new Test();
 myTest.say();
 ```
+
 So we can only use the method like this if there's no an input value and a return value
 
-```instance.name_of_method()```
+```instance.name_of_method()
 
 
 
 
-### Another way of using **return**
+
+### Another way of using ```return```
 
 We can use ```return``` when we want to get out from a method immidiately.
 
