@@ -101,3 +101,44 @@ and the ```sleep``` method of the ```HouseDog``` class will be called.
 
 >The method of re-implementing the methods of the parent class in the same form as the child class is called method overriding. 
 >(※Overwrite method)
+
+
+##Multiple inheritance
+
+Multiple inheritance means that a class inherits one or more classes.
+
+Many languages, including C++ and Python, support multiple inheritence, but Java does not support multiple inheritance.
+
+If Java supports multiple inheritance, the following code could be created.
+
+```java
+class A {
+  public void msg() {
+      System.out.println("A message");
+  }
+}
+
+class B {
+  public void msg() {
+      System.out.println("B message");
+  }
+}
+
+class C extends A, B {
+    public void static main(String[] args) {
+        C test = new C();
+        test.msg();
+    }
+}
+```
+
+
+Assuming that Java supports multlple inheritance, we inherited ```A``` and ```B``` classes at the same time as follows.
+(This is code that can't actually work)
+
+In the main method above, when we use ```test.msg()```, should we run ```msg``` method of class ```A``` at runtime?
+Or should we run the ```msg``` method of class ```B```?
+Supporting multiple inheritance will result in ambiguity.
+Java is the language that originally cut out those uncertainties.
+
+>In other langueages that support multiple inheritance, they resolve it by applying priority or simething if they inherit the same method.
