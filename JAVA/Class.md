@@ -76,7 +76,10 @@ I can use an instance variable like this
 instance.variable
 ```
 
-So, if I make cs instance like this, ```java University cs = new University()```
+So, if I make cs instance like this, 
+```java 
+University cs = new University()
+```
 
 I can use name which is the instance variable of cs like this.
 
@@ -136,7 +139,7 @@ public void setName(String name) {
 ```
 
 **this** from the above code indicates the instance which is made by the class 'Univeristy'. 
-If I make 'cs' instance like this, ```java University cs = new University()```,  then 'this' indicates 'cs'.
+If I make 'cs' instance like this, ```University cs = new University()```,  then 'this' indicates 'cs'.
 
 'setName' method is used like this in main method.
 ```java 
