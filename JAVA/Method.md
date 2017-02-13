@@ -105,6 +105,7 @@ Like this, ```c``` 's type should be ```int``` since the return type of the meth
 public String say() {
     return "Hi";
 }
+```
 
 The type of ```Input``` and ```return values``` in ```say``` method is 
 * ```Input value``` - NONE
@@ -132,6 +133,7 @@ So if we use ```String a = myTest.say()``` then ```Hi``` is going to be in ```a`
 public void sum(int a, int b) {
     System.out.println(a + " + " + b + " is " + (a + b));
 }
+```
 
 The type of ```Input``` and ```return values``` in ```say``` method is 
 * ```Input value``` - int type a, int type b
@@ -143,6 +145,7 @@ We can use this ```method``` like this
 Test myTest = new Test();
 myTest.sum(3, 5);
 ```
+
 So we can use the method like this if there's no return value
 ```instance.name_of_method(input argument1, input argument2, ...)```
 
@@ -163,6 +166,7 @@ The output for the code will be
 public void say() {
     System.out.println("Hi");
 }
+```
 
 The type of ```Input``` and ```return values``` in ```say``` method is 
 * ```Input value``` - Node
@@ -190,14 +194,19 @@ public void say_nick(String nick) {
 }
 ```
 This method gets an input value ```nick``` and just prints it. There's no return value.
+
 Meaning that prints string value is completely different from a method which has a return value.
+
 A return value generates only by ```return``` command.
+
 So this method gets out from the method if an input value is ```fool```. 
+
 We can use ```return``` like this when we want to get out from a method with special cases.
 
 ###The scope of a variable declared in a method
 
 What if the name of the variable used in the method is the same as the name used outside the method? 
+
 If you have a question like this, you will know for sure.
 
 ```java
@@ -214,13 +223,17 @@ public static void main(String[] args) {
 
 First, create a variable a and substitute ```1```. 
 
-We also incremented the input value by ```1``` and gave the value of ```a``` as the input value to the ```vartest``` method that does not return the return value. 
+We also incremented the input value by ```1``` and gave the value of ```a``` as the input value to the ```vartest``` method that does 
+not return the return value. 
 
-Next, the value of ```a``` is output. Of course, I added a ```1``` in ```vartest```, so ```2``` seems to be output, but if you create a program source and run it, the result is ```1```.
+Next, the value of ```a``` is output. Of course, I added a ```1``` in ```vartest```, so ```2``` seems to be output, but if you create a 
+program source and run it, the result is ```1```.
 
 
 This is because the newly created variable in the method is a variable that is written only within the method. 
+
 In other words, in the statement ```public void vartest (int a) {``` ,
+
 the variable ```a``` means the variable used only in the method, not the variable ```a``` outside the method.
 
 The above ```vartest``` method with the variable name as ```a``` is exactly the same as ```vartest``` with the variable name ```b``` as follows.
@@ -234,9 +247,13 @@ In other words, the ```variable``` used in the method has no relation to the ```
 ```Variables``` that are used only in this method are also referred to as **local variables**.
 
 >If the input value of ```vartest``` is not an ```int``` like the above example, it is different. 
+
 >If we pass an object to the input of a method, and the method changes the object received as input, 
+
 >the object retains the changed value even after the method executes. 
+
 >The reason for this difference is due to the value you pass to the method, 
+
 >depending on whether you pass the value to the ```method``` or the ```object```.
 
 Then is there any way to increase a outsise of a method by 1 using a method called ```vartest```?
@@ -256,10 +273,19 @@ public static void main(String[] args) {
 }
 ```
 
+
 The solution is to use ```return```.
+
 The ```vartest``` method returns a value that is one greater than the input value.
+
 So if ```a = myTest.vartest(a)```, then ```a``` will be replaced my the ```reutrn value``` of the ```vartest``` method.
+
 Of course, the variable ```a``` in the ```vartest``` method is not the same as ```a```outside the method.
+
+
+
+
+
 
 
 <hr/>
