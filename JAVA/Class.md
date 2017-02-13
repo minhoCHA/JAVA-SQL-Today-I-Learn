@@ -20,7 +20,7 @@ University student = new University();
 ```
 ```new``` is a keyword which let you make an object.
 
-so like this, I've made an object of University; student is an instance of class named University.
+so like this, I've made an object of ```University```; ```student``` is an instance of class named ```University```.
 
 
 
