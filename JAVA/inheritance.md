@@ -63,4 +63,7 @@ public class Dog extends Animal {
  }
  ```
  
- We've just added method named ```sleep```
+ We've just added method named ```sleep```. Noe ```Dog``` class has more funtions than ```Animal``` class.
+ 
+ >```public``` keyword which is at the beginning of ```sleep``` method is one of the access controllers to control access.
+ >```public``` makes any kinds of classes to access ```sleep``` method. 
