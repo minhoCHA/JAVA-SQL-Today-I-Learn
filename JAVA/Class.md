@@ -110,7 +110,7 @@ I added instance variable 'name' in the class named University but I didn't put 
 
 ## Method
 
-There's a method in class too. It's just like a function in the class but we just call it method.
+There's a method in class too. It's just like a function in the class but we just call it a method.
 I can put some value in the instance variable named 'name' which is in the class 'Univeristy' by using a method.
 
 ```java
