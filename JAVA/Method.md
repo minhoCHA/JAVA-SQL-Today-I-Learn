@@ -52,3 +52,45 @@ public class Test {
     }
 }
 ```
+We can easily see the process.
+
+## An ```Input value``` and a ```return value``` in ```method```
+
+> ```Input value``` ---> ```method``` ---> ```return value```
+
+### A structure of a ```method```
+```java
+public type method_name(type1 variable1, type2 variable2) {
+        return return value; // Don't need to use return if return value is ```void```
+}
+
+We can classify a method in 4 cases.
+* A ```method``` with ```Input value``` and ```return value```.
+* A ```method``` without ```Input value``` and ```return value```.
+* A ```method``` without ```Input value``` and has ```return value```.
+* A ```method``` with ```Input value``` and has no ```return value```.
+
+### A normal ```method```
+A normal ```method``` has both ```Input value``` and ```return value```.
+
+```java
+public int sum(int a , int b) {
+    return a + b;
+}
+```
+
+The type of ```Input``` and ```return values``` in ```sum``` method is 
+* ```Input value``` - ```int type a, int type b```
+* ```return value``` - ```int type```
+
+The method ```sum``` accepts two ```Input values``` and returns ```return value``` which is ```a + b```.
+We use the method which has both ```Input value``` and ```return value``` like this
+
+``` a_value_which_is_going_to_get_return_value = instance.name_of_method(input_argument1, input_argument2, ...)```
+The code for it is
+```java
+Test myTest = new Test();
+int c = myTest.sum(a, b);
+```
+
+Like this, ```c``` 's type should be ```int``` since the return type of the method ```sum``` is already sets as an ```int```.
