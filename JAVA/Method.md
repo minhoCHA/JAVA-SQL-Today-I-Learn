@@ -288,4 +288,3 @@ The ```vartest``` method returns a value that is one greater than the input valu
 So if ```a = myTest.vartest(a)```, then ```a``` will be replaced my the ```reutrn value``` of the ```vartest``` method.
 
 Of course, the variable ```a``` in the ```vartest``` method is not the same as ```a```outside the method.
-<h
