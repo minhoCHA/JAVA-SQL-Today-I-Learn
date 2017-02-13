@@ -84,4 +84,78 @@ I can use name which is the instance variable of cs like this.
 cs.name
 ```
 
+Moreover, I can add main method to check if class is working.
+```java
+public class University {
+    String name;
+    
+    public static void main(String[] args) {
+        University cs = new University();
+        System.out.println(cs.name);
+    }
+}
+```
 
+the output will be like this if I run this code
+```java
+null
+```
+
+The output comes out 'null' from cs.name. 'null' comes out when thers's no value assigned. 
+I added instance variable 'name' in the class named University but I didn't put any value in there and that's why the output is 'null'.
+
+
+## Method
+
+There's a method in class too. It's just like a function in the class but we just call it method.
+I can put some value in the instance variable named 'name' which is in the class 'Univeristy' by using a method.
+
+```java
+public class University {
+    String name;
+    
+    public void setName(String name) {
+        this.name = name;
+    }
+    
+    public static void main(String[] args) {
+        University cs = new University;
+        cs.setName("Java");
+        System.out.println(cs.name);
+    }
+}
+```
+
+> 'void' means there's no return value.
+
+So setName method sets string which is from input in the instance variable 'name'.
+```java
+public void setName(String name) {
+    this.name = name;
+}
+```
+
+**this** from the above code indicates the instance which is made by the class 'Univeristy'. 
+If I make 'cs' instance like this, ```java University cs = new University()```,  then 'this' indicates 'cs'.
+
+'setName' method is used like this in main method.
+```java cs.setName("Java"); ```
+so this following line will be perform if I run the code above.
+```java this.name = name; ```
+
+>Step-by-step
+1. input is "Java" as a string.
+```java this.name = "Java" ```
+
+2. It performs
+```java cs.name = "Java"``` since 'this' means the instance named 'cs'.
+
+So "Java" is going to be in the instance variable 'name' of 'cs' when I call 'setName' method.
+
+Finally, when I run the 'University' class, the output will be
+```java Java ```
+
+
+
+<hr/>
+DONE
