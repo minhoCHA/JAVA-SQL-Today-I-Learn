@@ -63,6 +63,7 @@ We can easily see the process.
 public type method_name(type1 variable1, type2 variable2) {
         return return value; // Don't need to use return if return value is ```void```
 }
+```
 
 We can classify a method in 4 cases.
 * A ```method``` with ```Input value``` and ```return value```.
@@ -87,6 +88,8 @@ The method ```sum``` accepts two ```Input values``` and returns ```return value`
 We use the method which has both ```Input value``` and ```return value``` like this
 
 ``` a_value_which_is_going_to_get_return_value = instance.name_of_method(input_argument1, input_argument2, ...)```
+
+
 The code for it is
 ```java
 Test myTest = new Test();
