@@ -183,6 +183,7 @@ So we can only use the method like this if there's no an input value and a retur
 
 
 ### Another way of using ```return```
+
 We can use ```return``` when we want to get out from a method immidiately.
 
 ```java
@@ -193,6 +194,7 @@ public void say_nick(String nick) {
     System.out.println("My nickname is " + nick);
 }
 ```
+
 This method gets an input value ```nick``` and just prints it. There's no return value.
 
 Meaning that prints string value is completely different from a method which has a return value.
@@ -220,6 +222,7 @@ public static void main(String[] args) {
      myTest.vartest(a);
      System.out.println(a);
 }
+```
 
 First, create a variable a and substitute ```1```. 
 
