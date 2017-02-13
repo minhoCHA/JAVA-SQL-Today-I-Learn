@@ -2,7 +2,7 @@
 
 Inheritance literally means that inherit something.
 
-We can make a ```dog``` class which inherits from the ```Animal```.
+We can make a ```dog``` class which inherits the ```Animal``` class.
 
 Animal.java
 ```java
