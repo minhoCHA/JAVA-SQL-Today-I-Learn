@@ -33,7 +33,7 @@ so like this, I've made an object of ```University```; ```student``` is an insta
 
 >So, in term instance is used to explain the relation of specific object(```student```) between the class(```University```).
 
->It's better to use "```student``` is an object" rather than "```student``` is an instance" 
+>It's better to use ** "```student``` ** is an object" rather than "```student``` is an instance" 
 
 >and "```student``` is an instance of ```University```" rather than "```student``` is an object of ```University```".
 
