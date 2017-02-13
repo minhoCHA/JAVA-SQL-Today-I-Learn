@@ -180,14 +180,11 @@ myTest.say();
 ```
 
 So we can only use the method like this if there's no an input value and a return value
+```java
+instance.name_of_method()
+```
 
-```instance.name_of_method()
-
-
-
-
-
-### Another way of using ```return```
+###Another way of using ```return```
 
 We can use ```return``` when we want to get out from a method immidiately.
 
@@ -199,6 +196,8 @@ public void say_nick(String nick) {
     System.out.println("My nickname is " + nick);
 }
 ```
+
+
 
 This method gets an input value ```nick``` and just prints it. There's no return value.
 
