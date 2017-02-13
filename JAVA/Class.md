@@ -37,7 +37,7 @@ so like this, I've made an object of University; student is an instance of class
 
 >and "student is an instance of University" rather than "student is an object of University".
 
-
+<hr/>
 
 It's easy to think like this.
 
