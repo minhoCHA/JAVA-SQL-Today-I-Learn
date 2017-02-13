@@ -66,4 +66,34 @@ public class Dog extends Animal {
  We've just added method named ```sleep```. Noe ```Dog``` class has more funtions than ```Animal``` class.
  
  >```public``` keyword which is at the beginning of ```sleep``` method is one of the access controllers to control access.
- >```public``` makes any kinds of classes to access ```sleep``` method. 
+ >```public``` makes any kinds of classes to access ```sleep``` method.
+ 
+##Method overriding
+
+Now, let's create a ```HouseDog``` class that makes ```Dog``` more specific.
+
+The ```HouseDog``` class inherits the ```Dog``` class and can be created as follows
+
+HouseDog.java
+```java
+public class HouseDog extends Dog {
+  public static void main(String[] args) {
+      HouseDog houseDog = new HouseDog();
+      houseDog.setName("happy");
+      houseDog.sleep();
+  }
+}
+```
+
+We implemented the ```sleep``` method in the ```Dog``` class in the same way in ```HouseDog``` and tried to execute it.
+
+```happy zzz in house```
+
+
+
+
+
+
+HouseDog 클래스에 Dog 클래스와 동일한 형태의 sleep 메소드를 구현하면 HouseDog 클래스의 sleep 메소드가 Dog 클래스의 sleep 메소드보다 더 높은 우선순위를 갖게 되어 HouseDog 클래스의 sleep 메소드가 호출되게 된다.
+
+이렇게 부모클래스의 메소드를 자식클래스가 동일한 형태로 또다시 구현하는 행위를 메소드 오버라이딩(Method Overriding)이라고 한다. (※ 메소드 덮어쓰기)
