@@ -1,6 +1,6 @@
 # Method
 
-The difference between other languages and Java is that Java has a ```function``` in a class.
+The difference between other languages and Java is that Java has a ```function``` *in a class*.*
 
 We called it ```Method```.
 
