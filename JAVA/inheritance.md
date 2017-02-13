@@ -134,11 +134,16 @@ class C extends A, B {
 
 
 Assuming that Java supports multlple inheritance, we inherited ```A``` and ```B``` classes at the same time as follows.
+
 (This is code that can't actually work)
 
 In the main method above, when we use ```test.msg()```, should we run ```msg``` method of class ```A``` at runtime?
+
 Or should we run the ```msg``` method of class ```B```?
+
 Supporting multiple inheritance will result in ambiguity.
+
 Java is the language that originally cut out those uncertainties.
+
 
 >In other langueages that support multiple inheritance, they resolve it by applying priority or simething if they inherit the same method.
