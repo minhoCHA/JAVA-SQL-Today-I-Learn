@@ -63,3 +63,4 @@ public class Dog extends Animal {
  }
  ```
  
+ We've just added method named ```sleep```
