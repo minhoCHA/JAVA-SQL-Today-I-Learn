@@ -139,23 +139,32 @@ public void setName(String name) {
 If I make 'cs' instance like this, ```java University cs = new University()```,  then 'this' indicates 'cs'.
 
 'setName' method is used like this in main method.
-```java cs.setName("Java"); ```
+```java 
+cs.setName("Java"); 
+```
 so this following line will be perform if I run the code above.
-```java this.name = name; ```
+```java 
+this.name = name; 
+```
 
 >Step-by-step
 
 Input is "Java" as a string.
-```java this.name = "Java" ```
+```java
+this.name = "Java" 
+```
 
 
 It performs
-```java cs.name = "Java"``` since 'this' means the instance named 'cs'.
+```java
+cs.name = "Java"
+``` 
+since 'this' means the instance named 'cs'.
 
 So "Java" is going to be in the instance variable 'name' of 'cs' when I call 'setName' method.
 
 Finally, when I run the 'University' class, the output will be
-```java Java ```
+```Java ```
 
 
 
