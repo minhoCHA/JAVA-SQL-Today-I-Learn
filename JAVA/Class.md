@@ -57,4 +57,31 @@ University history = new University();
 ```
 
 ## Instance Variable
+Now, I can put some stuff in my class. I can make my University class to give some names like cs, physics which are made by the class.
+
+University.java
+```java
+public class University {
+  String name;
+}
+```
+
+I put String variable named 'name' in the University class. So I call it as an instance variable which is added to the class.(or a member variable)
+
+>I can declare an instance variable as many as I want. 
+
+I can use an instance variable like this
+
+```java
+instance.variable
+```
+
+So, if I make cs instance like this, ```java University cs = new University()```
+
+I can use name which is the instance variable of cs like this.
+
+```java
+cs.name
+```
+
 
