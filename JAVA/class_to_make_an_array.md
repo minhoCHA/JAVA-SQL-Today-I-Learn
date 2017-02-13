@@ -22,7 +22,7 @@ Cat 25: No Hat
 
 
 
-
+```java
 	  public class cat {
 	
 	     public static void main(String[] args) {
@@ -45,3 +45,4 @@ Cat 25: No Hat
 	          }
 	     } 
 	  }
+```
