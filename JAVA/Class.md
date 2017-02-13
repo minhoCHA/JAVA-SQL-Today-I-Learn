@@ -17,4 +17,6 @@ This is how to make an object.
 ```java
 University student = new University();
 ```
-```new``` 는
+>```new``` is a keyword which let you make an object.
+
+>so like this, I've made an object of University; student is an instance of class named University.
