@@ -25,12 +25,10 @@ so like this, I've made an object of University; student is an instance of class
 
 
 
-```
-**An object and an instance**
+>**An object and an instance**
 
-Another name of an object which is made by a class is an instance. Then what is the difference between those?
+>Another name of an object which is made by a class is an instance. Then what is the difference between those?
 
-```University student = new University()``` in this case, student is an object. And also, it's an instance of University.
+>```University student = new University()``` in this case, student is an object. And also, it's an instance of University.
 
-So, we use an instance to explain a specific object(student)
-```
+>So, we use an instance to explain a specific object(student)
