@@ -93,7 +93,10 @@ We implemented the ```sleep``` method in the ```Dog``` class in the same way in 
 
 
 
+If we implement the ```sleep``` method of the same type as the ```Dog``` class in the ```HouseDog``` class, 
 
-HouseDog 클래스에 Dog 클래스와 동일한 형태의 sleep 메소드를 구현하면 HouseDog 클래스의 sleep 메소드가 Dog 클래스의 sleep 메소드보다 더 높은 우선순위를 갖게 되어 HouseDog 클래스의 sleep 메소드가 호출되게 된다.
+the ```sleep``` method of the ```HouseDog``` class will have a higher priority than the ```sleep``` method of the ```Dog``` class, 
 
-이렇게 부모클래스의 메소드를 자식클래스가 동일한 형태로 또다시 구현하는 행위를 메소드 오버라이딩(Method Overriding)이라고 한다. (※ 메소드 덮어쓰기)
+and the ```sleep``` method of the ```HouseDog``` class will be called.
+
+The method of re-implementing the methods of the parent class in the same form as the child class is called method overriding. (Overwrite method ※)
