@@ -144,16 +144,20 @@ so this following line will be perform if I run the code above.
 ```java this.name = name; ```
 
 >Step-by-step
-1. input is "Java" as a string.
+
+Input is "Java" as a string.
 ```java this.name = "Java" ```
 
-2. It performs
+
+It performs
 ```java cs.name = "Java"``` since 'this' means the instance named 'cs'.
 
 So "Java" is going to be in the instance variable 'name' of 'cs' when I call 'setName' method.
 
 Finally, when I run the 'University' class, the output will be
 ```java Java ```
+
+
 
 
 
