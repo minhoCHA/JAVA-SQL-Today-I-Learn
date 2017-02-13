@@ -31,4 +31,6 @@ so like this, I've made an object of University; student is an instance of class
 
 >```University student = new University()``` in this case, student is an object. And also, it's an instance of University.
 
->So, we use an instance to explain a specific object(student)
+>So, in term instance is used to explain the relation of specific object(student) between the class(University).
+>It's better to use "student is an object" rather than "student is an instance" 
+>and "student is an instance of University" rather than "student is an object of University".
