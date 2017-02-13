@@ -61,7 +61,7 @@ We can easily see the process.
 ### A structure of a ```method```
 ```java
 public type method_name(type1 variable1, type2 variable2) {
-        return return value; // Don't need to use return if return value is ```void```
+        return return value; // Don't need to use return if return value is void
 }
 ```
 
@@ -169,7 +169,7 @@ public void say() {
 ```
 
 The type of ```Input``` and ```return values``` in ```say``` method is 
-* ```Input value``` - Node
+* ```Input value``` - NONE
 * ```return value``` - ```void```
 
 We can only use this ```method``` like this
