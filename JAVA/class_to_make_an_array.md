@@ -23,26 +23,28 @@ Cat 25: No Hat
 
 
 ```java
-	  public class cat {
-	
-	     public static void main(String[] args) {
+public class cat {
 
-		  int[] catArray = new int[25];
-		  findHat(catArray);
-	     }
+	public static void main(String[] args) {
+
+		int[] catArray = new int[25];
+		
+		findHat(catArray);
+
+	}
 	
-       	     public static void findHat(int[] array) {
-  
-	  	  System.out.println("There are " + array.length + " cats.");
-		  
-		  for(int i = 1; i <= 25; i++) {
-		      System.out.println("Cat " + i + ": ");
-		  	
-		  	if(i % 3 == 0)
-		            System.out.println("Has a hat");
-		  	else
-		  	    System.out.println("No hat");
-	          }
-	     } 
-	  }
+	public static void findHat(int[] array) {
+
+		System.out.println("There are " + array.length + " cats.");
+		
+		for(int i = 1; i <= 25; i++) {
+			System.out.println("Cat " + i + ": ");
+			
+			if(i % 3 == 0)
+				System.out.println("Has a hat");
+			else
+				System.out.println("No hat");
+		}
+	}
+}
 ```
