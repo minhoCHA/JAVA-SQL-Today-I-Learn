@@ -84,6 +84,33 @@ public class HouseDog extends Dog {
   }
 }
 ```
+The output will be 
+```happy zzz```
+since ```sleep```method is called.
+
+But ```HouseDog``` sleeps only at home.
+
+What if we want an output like this?
+```happy zzz in house``` rather than ```happy zzz```
+
+How do we do this?
+
+Let's do the following:
+
+
+```java
+public class HouseDog extends Dog {
+  public void sleep() {
+      System.out.println(this.name + " zzz in the house");
+  }
+  
+  public static void main(String[] args) {
+      HouseDog housedog = new HouseDog();
+      houseDog.setName("happy");
+      houseDog.sleep();
+  }
+}
+```
 
 We implemented the ```sleep``` method in the ```Dog``` class in the same way in ```HouseDog``` and tried to execute it.
 
