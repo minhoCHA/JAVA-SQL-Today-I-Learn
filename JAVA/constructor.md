@@ -97,7 +97,11 @@ The benefir of using the constructor in this way is that we can control essentia
 
 You can see that it prints the same result as the following when you execute the main method of the ```HouseDog``` class.
 
-```happy```
+```java
+happy
+```
+
+
 
 
 ## Default Constructor
