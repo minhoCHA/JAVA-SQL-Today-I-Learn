@@ -151,5 +151,58 @@ No matter what Predator is added, ```ZooKeeper``` no longer needs to add a ```fe
 Every time when a predator is added, all we need to do is that just create a class that implements the ```Predator``` interface as follows.
 
 
-
 Crocodile.java
+```java
+public class Crocodile extends Animal implements Predator {
+}
+```
+
+We should now know that why we need an interface.
+
+Normally, if we are writing an important class(```ZooKeeper``` will be an important class here), we must write an importance class based on the interface, regardless of the implementation of the class.
+
+Because the implementation(```Tiger```, ```Lion```, ```Crocodile```, ...) increases, but the interface(```Predator```) in only one.
+
+Now there's a problem in the ```ZooKeeper``` class. 
+
+The ```feed``` method of the ```ZooKeeper``` class unconditionally make an output ```feed tiger```.
+
+If ```lion``` comes, we should print ```feed lion``` !
+
+```java
+public void feed(Predator predator) {
+   System.out.println("feed tiger");
+}
+```
+
+Now, we can change the interface.
+
+Add the following method in the ```Predator``` interface.
+
+Predator.java
+```java
+public interface Predator {
+   public String getName();
+}
+```
+
+We've just added ```getName``` method. But there's no contents in it!
+
+Interface method only have a name and no content.
+
+It's one of the rules of the interface. 
+
+The method ```getName``` should be implemented by the classes that implements the interface.
+
+If we add methods to the interface above will cause compile error in the classes which implement ```Predator``` interface such as ```Tiger```, ```Lion```. 
+
+To solve the error, let's implement the ```getName``` method in ```Tiger```, ```Lion```.
+
+Tiger.java
+```java
+public class Tiger extends Animal implements Predator {
+   public String getName() {
+      return this.name;
+   }
+}
+```
