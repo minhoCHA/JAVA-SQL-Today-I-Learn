@@ -143,3 +143,37 @@ If there's no ```constructor``` in the ```class```, the compiler automatically a
 However, the compiler does not add a ```default constructor``` is any of the user-written constructors are implemented.
 
 > For this reason, ```new HouseDog()``` can't be used after creatring a constructor which accepts ```name``` as input in the ```HouseDog``` class.
+
+
+## Constructor overroading
+
+We can create a different constructor for multiple input fields(entries) in a class.
+
+The following are possible,
+
+```java
+public class HouseDog extends Dog {
+  public HouseDog(String name) {
+      this.setName(name);
+  }
+
+  public HouseDog(int type) {
+      if (type == 1) {
+          this.setName("yorkshire");
+      }else if (type == 2) {
+          this.setName("bulldog");
+      }
+  }
+  
+  public void sleep() {
+      System.out.println(this.name + " zzz in house");
+  }
+  
+  public static void main(String[] args) {
+      HouseDog happy = new HouseDog("happy");
+      HouseDog yorkshire = new HouseDog(1);
+      System.out.println(happy.name);
+      System.out.println(yorkshire.name);
+  } 
+}
+```
