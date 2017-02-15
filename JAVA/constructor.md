@@ -70,9 +70,29 @@ public class HouseDog extends Dog {
 Just like ```public HouseDog(String name) { ... ``` is a constructor, which the method name is same as the class's, 
 and has no return type.
 
->Rule of **constructor**
+>Rules of a **constructor**
 
 >1. The name of method and class are same.
 
 >2. There's no return type.
 
+
+If we define a constructor in the ```HouseDog``` class like above and then write it like the following, an compile error occurs.
+
+```HouseDog dog = new HouseDog();```
+
+The reason for the error is that the constructor is declared.
+
+When a constructor is declared, it is possible to create an object only according to the rules of the constructor.
+
+To solve the compile error, we must pass the string to the constructor as shown below.
+
+```HouseDog dog = new HouseDog("happy");```
+
+The above changes will automatically call the constructor method and pass the string ```happy``` to the constructor's input variable.
+
+The ```happy``` which is  passed to the constructor will be set to the instance variable name by the ```setName``` method.
+
+The benefir of using the constructor in this way is that we can control essential behaviors such as ```setName("happy")``` when we create an instance.
+
+You can see that it prints the same result as the following when you execute the main method of the ```HouseDog``` class.
