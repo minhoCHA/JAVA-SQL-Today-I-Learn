@@ -145,7 +145,7 @@ However, the compiler does not add a ```default constructor``` is any of the use
 > For this reason, ```new HouseDog()``` can't be used after creatring a constructor which accepts ```name``` as input in the ```HouseDog``` class.
 
 
-## Constructor overroading
+## Constructor overloading
 
 We can create a different constructor for multiple input fields(entries) in a class.
 
@@ -177,3 +177,22 @@ public class HouseDog extends Dog {
   } 
 }
 ```
+
+The ```HouseDog``` class above has two constructors.
+
+One is a constructor that takes a ```String``` data type as input and the other is a constructor that accepts an ```int``` type as input.
+
+The difference between the two constructors is inputs.
+
+We can create multiple constructors with differenc input fields(entries), which is called ```constructor overloading```.
+
+The ```HouseDog``` object can now be created in two ways:
+
+```java
+HouseDog happy = new HouseDog("happy");
+HouseDog yorkshire = new HouseDog(1);
+```
+
+> Method overloading is a similar concept.
+
+> Just like constructor overloading, method overloading can be different from input field(entry), but the return type(data type) must be same.
