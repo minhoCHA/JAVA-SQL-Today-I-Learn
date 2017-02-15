@@ -96,3 +96,46 @@ The ```happy``` which is  passed to the constructor will be set to the instance 
 The benefir of using the constructor in this way is that we can control essential behaviors such as ```setName("happy")``` when we create an instance.
 
 You can see that it prints the same result as the following when you execute the main method of the ```HouseDog``` class.
+
+```happy```
+
+
+##Default Constructor
+
+Let's see the following code,
+
+```java
+public class Dog extends Animal {
+  public void sleep() {
+      System.out.println(this.name + " zzz");
+   }
+}
+```
+
+and this code,
+
+```java
+public class Dog extends Animal {
+  public Dog() {
+  }
+  
+  public void sleep() {
+      System.out.println(this.name + " zzz");
+  }
+}
+```
+
+What's the difference between the first and the second code? 
+
+There's a constructor in the second one. 
+
+The constructor which has no input field just like the above is called the ```default constructor```.
+
+
+If we implement the ```default constructor``` above, the above ```default constructor``` will be executed when the ```Dog``` object is created with ```new Dog()```.
+
+If there's no ```constructor``` in the ```class```, the compiler automatically adds the ```default constructor``` as above.
+
+However, the compiler does not add a ```default constructor``` is any of the user-written constructors are implemented.
+
+> For this reason, ```new HouseDog()``` can't be used after creatring a constructor which accepts ```name``` as input in the ```HouseDog``` class.
