@@ -71,6 +71,8 @@ Just like ```public HouseDog(String name) { ... ``` is a constructor, which the 
 and has no return type.
 
 >Rule of **constructor**
+
 >1. The name of method and class are same.
+
 >2. There's no return type.
 
