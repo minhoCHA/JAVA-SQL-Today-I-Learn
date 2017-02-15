@@ -100,7 +100,7 @@ You can see that it prints the same result as the following when you execute the
 ```happy```
 
 
-##Default Constructor
+## Default Constructor
 
 Let's see the following code,
 
