@@ -206,3 +206,35 @@ public class Tiger extends Animal implements Predator {
    }
 }
 ```
+
+Lion.java
+```java
+public clsas Lion extends Animal implements Predator {
+   public String getName() {
+      return this.name;
+   }
+}
+```
+
+The ```getName``` methos was created to return the instance variable ```name```. It will comlile without any problems.
+
+Now, the ```ZooKeeper``` class can be changed as follows:
+
+```java
+public class ZooKeeper {
+   public void feed(Predator predator) {
+      System.out.println("feed" + predator.getName());
+   }
+}
+```
+
+The ```feed``` method was changed to print ```"feed" + predator.getName()``` from the output ```feed tiger```.
+
+```getName()```, which implements the ```Predator``` interface    when we call ```predator.getName()```.
+
+
+When we call ```predator.getName()```,  ```getName()``` on the implementation (```Tiger```, ```Lion```) that implements the 
+
+```Predator``` interface will be called.
+
+Let's create the ```main``` method as follows and execute the ```ZooKeeper``` class.
