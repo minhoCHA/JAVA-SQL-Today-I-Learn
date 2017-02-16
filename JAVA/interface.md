@@ -230,8 +230,6 @@ public class ZooKeeper {
 
 The ```feed``` method was changed to print ```"feed" + predator.getName()``` from the output ```feed tiger```.
 
-```getName()```, which implements the ```Predator``` interface    when we call ```predator.getName()```.
-
 
 When we call ```predator.getName()```,  ```getName()``` on the implementation (```Tiger```, ```Lion```) that implements the 
 
