@@ -127,20 +127,98 @@ The input datatype of the ```barkAnimal``` method has changed from ```Animal``` 
 
 We also changed the part which check the object type of the ```animal``` and prints ```Bow``` or ```Meow``` to just call the ```bark``` method.
 
-The complicated conditional branch statement is 
+With these chagne, the complicated conditional branch statement disappeared and it became clear code.
+
+> We can easily control the conditional statement(complex ```if else```) as shown in the above if we use polymorphosm.
+
+The ```tiger``` and ```lion``` objects in the above example are objects for the ```Tiger``` and ```Lion``` classes, and also the objects of the ```Animal``` class and the objects of the ```Barkable``` and ```Predator``` interfaces.
+
+For this reason, we can use the input datatype of the ```barkAnimal``` method from ```Animal``` to ```Barkable```.
+
+> Polimorphism refers that an object can have multiple data types.
+
+So, the object of the ```Tiger``` class can be expressed in various data types as follows.
+
+```java
+Tiger tiger = new Tiger();
+Animal animal = new Tiger();
+Predator predator = new Tiger();
+Barkable barkable = new Tiger();
+```
+
+But note that the ```predator``` object declared as ```Predator``` and the ```barkable``` object declared as ```Barkable``` have different methods to use.
+
+```predator``` method can only call ```getName``` method since it's the object of ```Predator``` interface which the ```getName()``` method is declared.
+
+Likewise, the object ```barkable``` can only call ```bark``` method since it's declared by ```Barkable```
+
+What if we want to use both the ```getName``` and ```bark``` methods?
+
+We can use a ```tiger``` object declared in ```Tiger``` which implements the ```Predator```, ```Barkable``` interface, 
+
+or create a new interface which includes both the ```getName``` and ```bark``` methods as follows
 
 
+BarkablePredator.java
+```java
+public interface BarkablPredator {
+  public void bark();
+  public String getName();
+}
+```
+or
+```java
+public interface BarkablePredator extends Predator, Barkable {
+}
+```
+The second way is to utilize the existing interface.
+
+We can inherit the ```getName``` method of ```Predator``` and the ```bark``` method of ```Barkable``` by using the second way.
+
+Unlike a normal class, an interface can inherit nultiple interfaces (```Predator```, ```Barkable```) by using extends.
+
+So it's possible to use multiple inheritance. 
+(* In general class, only single inheritance is possible.)
 
 
+Here are the final ```Barkable``` interfaces and the ```Tiger```, ```Lion```, and ```Bouncer``` classes.
 
-
-
-The input datatype of the barkAnimal method has changed from Animal to Barkable. I checked the object type of the animal and changed the "bark" or "growl" output to just call the bark method. I made this change, and the complicated conditional branch statement disappeared, and it became clear code for anyone. Amazing !!
-
-If you use polymorphism, you can easily process the conditional statements of complex if else as shown in the above example.
-The tiger and lion objects used in the above example are objects of the Tiger and Lion classes, respectively, and objects of the Animal class and objects of the Barkable and Predator interfaces. For this reason, you can use the input datatype of the barkAnimal method from Animal to Barkable.
-
-In the object-oriented world, polymorphism refers to the fact that an object can have multiple data type types.
-
-In other words, an object of the Tiger class can be expressed in various data types as follows.
+Barkable.java
+```java
+public interface Barkable {
+  public void bark();
+}
+```
+Tiger.java
+```java
+public class Tiger extends Animal implements Predator, Barkable {
+  public void bark() {
+    System.out.println("Bow");
+  }
+}
+```
+Lion.java
+```java
+public class Lion extends Animal implements Predator, Barkable {
+  public void bark() {
+    System.out.println("Meow");
+  }
+}
+```
+Bouncer.java
+```java
+public class Bouncer {
+  public void barkAnimal (Barkable animal) {
+    animal.bark();
+  }
   
+  public static void main(String[] args) {
+    Tiger tiger = new Tiger();
+    Lion lion = new Lion();
+    
+    Bouncer bouncer = new Bouncer();
+    bouncer.barkAnimal(tiger);
+    bouncer.barkAnimal(lion);
+  }
+}
+```
