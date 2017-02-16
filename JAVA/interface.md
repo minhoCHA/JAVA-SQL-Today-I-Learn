@@ -352,10 +352,9 @@ This is the main points of the interface.
 Like the ```ZooKeeper```, which does not matter what kind of ```Predator``` (```Tiger```, ```Lion``` ...) it is feeding.
 
 
----
-Real world: computer
-Computer World: ZooKeeper
----
+1. Computer == ZooKeeper
+2. USB Port == Predator
+3. Hard disk, camera == Tiger, Lion, Crocodile
 
 
 
