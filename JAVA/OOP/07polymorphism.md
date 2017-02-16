@@ -47,3 +47,30 @@ Do you like the ```barkAnimal``` method of this ```Bouncer``` class?
 
 When ```Crocodile```, ```Leopard```, etc. are added, the ```barkAnimal``` method should be modified as follows.
 
+```java
+public void barkAnimal(Animal animal) {
+    if (animal instanceof Tiger) {
+        System.out.println("Bow");
+    } else if (animal instanceof Lion) {
+        System.out.println("Meow");
+    } else if (animal instanceof Crocodile) {
+        System.out.println("Lala");
+    } else if (animal instanceof Leopard) {
+        System.out.println("Yoyo");
+    }
+}
+```
+
+Well, not good.
+
+Since we've covered the ```interface``` we can find a better solution.
+
+Let's create an interface named ```Barkable``` like this
+
+Barkable.java
+
+```java
+public interface Barkable {
+  public void bark();
+}
+```
