@@ -236,3 +236,128 @@ When we call ```predator.getName()```,  ```getName()``` on the implementation (`
 ```Predator``` interface will be called.
 
 Let's create the ```main``` method as follows and execute the ```ZooKeeper``` class.
+
+```java
+public class ZooKeeper {
+   public void feed(Predator predator) {
+      System.out.println("feed " + predator.getName());
+   }
+   
+   public static void main(String[] args) {
+      Tiger tiger = new Tiger();
+      tiger.setName("tiger");
+      
+      Lion lion = new Lion();
+      lion.setName("lion");
+      
+      ZooKeeper zooKeeper = new ZooKeeper();
+      zooKeeper.feed(tiger);
+      zooKeeper.feed(lion);
+   }
+}
+```
+
+The output will be
+
+```java
+feed tiger
+feed lion
+```
+
+But we can see that the ```Tiger``` and ```Lion``` in ```getName``` method is duplicated.
+
+The ```getName``` method might be better to drag it to ```Animal```.
+
+Move the ```Tiger```'s ```getName``` method to the ```Animal``` class and remove the ```getName``` method from ```Tiger``` and ```Lion```.
+
+> Refactoring is the act of combining these duplicate methods and moving its position.
+
+Let's take a look at the classes that have been created and finished with refactoring.
+
+Animal.java
+```java
+public class Animal {
+   String name;
+   
+   public void setName(String name) {
+      this.name = name;
+   }
+   
+   public String getName() {
+      return this.name;
+   }
+}
+```
+
+Predator.java
+```java
+public interface Predator {
+   public String getName();
+}
+```
+
+Tiger.java
+```java
+public class Tiger extends Animal implements Predator {
+}
+```
+
+Lion.java
+```java
+public class Lion extends Animal implements Predator {
+}
+```
+
+ZooKeeper.java
+```java
+public class ZooKeeper {
+   public void feed(Predator predator) {
+      System.out.println("feed " + predator.getName());
+   }
+   
+   public static void main(String[] args) {
+      Tiger tiger = new Tiger();
+      tiger.setName("tiger");
+      
+      Lion lion = new Lion();
+      lion.setName("lion");
+      
+      ZooKeeper zooKeeper = new ZooKeeper();
+      zooKeeper.feed(tiger);
+      zooKeeper.feed(lion);
+   }
+}
+```
+
+Now the ```ZooKeeper``` class can execute ```feed``` methods regardless of ```Tiger```, ```Lion```, ```Crocodile``` by using the ```Predator``` interface.
+
+The most important part of this chapter is understanding why interfaces are needed.
+
+Of course, we can create a program without knowing the interface, but it's far from an object-oriented program.
+
+Let's think about the interface more conceptually this time.
+
+We know about the USB ports on our computer. 
+
+The devices that can be connected to the USB port are hard disk, memory stick, digital camera and so on.
+
+This USB port is the real world's interface.
+
+We can make any device knowing the specifications of the USB port. 
+
+Also, the computer only provides a USB port and the computer don't need to worry about which device is made. 
+
+This is the main points of the interface.
+
+Like the ```ZooKeeper```, which does not matter what kind of ```Predator``` (```Tiger```, ```Lion``` ...) it is feeding.
+
+
+> Real world            Computer Workd
+>  computer               ZooKeeper
+>  USB port               Predator
+>  hard disk, camera..    Tiger, Lion, Crocodile..
+
+
+
+> The USB port has various rules that electronic devices must observe. (methods of the interface)
+
