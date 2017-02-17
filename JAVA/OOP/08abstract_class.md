@@ -48,22 +48,41 @@ public class Lion extends Predator implements Barkable {
 }
 ```
 
+The ```Tiger``` and ```Lion``` classes have been modified to extends the ```Predator``` abstract class rather than implements ```Predator``` interface.
 
+And the ```getName``` method declared as a abstract method in ```Predator``` absract is implemented as above.
 
+A method declared abstract in an abstract class(```getName``` method) is a method that must be implemented in a class that inherits an abstract class, just like an interface method.
 
+The ```ZooKeeper``` class has no changes. 
 
+The ```getName``` method implemented in the existing ```Animal``` class is now useless so should be removed.
 
+Animal.java
+```java
+public class Animal {
+  String name;
+  
+  public void setName(String name) {
+    this.name = name;
+  }
+}
+```
 
+We can add not only abstract methods but also actual methods to abstract classes. 
 
+Adding an actual method to an abstract class makes all of those methods available to objects created with ```Tiger```, ```Lion``` ...
 
+For example, if we add a method named ```isPredator``` to the ```Predator``` abstract class as shown below, we can use it in ```Tiger```, ```Lion``` ... that inherit this class.
 
+```java
+public abstract class Predator extends Animal {
+  public abstract String getName();
+    
+  public boolean isPredator() {
+    return true;
+  }
+}
+```
 
-
-
-
-
-
-
-
-
-
+It's possibly be very complex in design since Java does not support mutiple inheritance(inheriting multiple classes at the same time)(Java only supports single inheritance) if we use abstract classes.
