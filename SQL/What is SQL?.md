@@ -14,6 +14,6 @@ With SQL,
   
   
 When we're done learing SQL,
-we'll have a much better understanding of how data is stored in the apps that we use,
-and be able to use SQL, if we ever build an app.
+* we'll have a much better understanding of how data is stored in the apps that we use,
+* and be able to use SQL, if we ever build an app.
 
