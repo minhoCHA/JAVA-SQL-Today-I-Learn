@@ -1,9 +1,7 @@
 # Creating a table and inserting data
 
 
-```java
-  public static void main(String[] args) {
-
+```
 /** Grocery list:
 Bananas (4)
 Peanut Butter (1)
