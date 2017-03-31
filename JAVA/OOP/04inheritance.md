@@ -1,4 +1,4 @@
-#Inheritance
+# Inheritance
 
 Inheritance literally means that inherit something.
 
