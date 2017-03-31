@@ -1,4 +1,4 @@
-#StringBuffer
+# StringBuffer
 
 ```StringBuffer``` is a type which is commonly used when adding or modifying strings.
 
