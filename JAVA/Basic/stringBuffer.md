@@ -4,7 +4,7 @@
 
 ```StringBuffer``` is used as follows.
 
-###Append
+### Append
 Test.java
 ```java
 public class Test {
